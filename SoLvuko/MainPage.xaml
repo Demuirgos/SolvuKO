@@ -1,0 +1,212 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SoLvuko.MainPage" WidthRequest="300" HeightRequest="800" MinimumWidthRequest="300" MinimumHeightRequest="800">
+    <StackLayout x:Name="AbsLayout">
+        <StackLayout x:Name="boardHolder">
+            <FlexLayout Margin="0,0,0,0">
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+            </FlexLayout>
+            <FlexLayout Margin="0,0,0,0">
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+            </FlexLayout>
+            <FlexLayout Margin="0,0,0,0">
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry/>
+                                <Entry/>
+                                <Entry/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+            </FlexLayout>
+        </StackLayout>
+        <FlexLayout Margin="20,0,20,0" >
+            <Label WidthRequest="125" x:Name="Difficulty"  Text="Easy"/>
+            <Slider WidthRequest="300" x:Name="SliderDiff"  Maximum="69" InputTransparent="False" MinimumTrackColor="Black" Opacity="100" Minimum="1" ValueChanged="Slider_ValueChanged"/>
+        </FlexLayout>
+        <Button x:Name="GenerateSoduko" Clicked="GenerateSoduko_Clicked" Margin="5" Text="Generate"/>
+        <Button x:Name="Quit" Margin="5,-10,5,-10" Clicked="Quit_Clicked" Text="Quit"/>
+    </StackLayout>
+</ContentPage>
