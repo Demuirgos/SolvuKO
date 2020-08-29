@@ -11,40 +11,19 @@
                     <Frame BorderColor="Black" BackgroundColor="AliceBlue">
                         <StackLayout Margin="-20">
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                        </StackLayout>
-                    </Frame>
-                </Frame>
-                <Frame BorderColor="Black">
-                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
-                        <StackLayout Margin="-20">
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                         </StackLayout>
                     </Frame>
@@ -53,42 +32,19 @@
                     <Frame BorderColor="Black" BackgroundColor="AliceBlue">
                         <StackLayout Margin="-20">
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                        </StackLayout>
-                    </Frame>
-                </Frame>
-            </FlexLayout>
-            <FlexLayout Margin="0,0,0,0">
-                <Frame BorderColor="Black">
-                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
-                        <StackLayout Margin="-20">
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                         </StackLayout>
                     </Frame>
@@ -97,63 +53,42 @@
                     <Frame BorderColor="Black" BackgroundColor="AliceBlue">
                         <StackLayout Margin="-20">
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                        </StackLayout>
-                    </Frame>
-                </Frame>
-                <Frame BorderColor="Black">
-                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
-                        <StackLayout Margin="-20">
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
-                            </FlexLayout>
-                            <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                         </StackLayout>
                     </Frame>
                 </Frame>
             </FlexLayout>
-            <FlexLayout Margin="0,0,0,0">
+            <FlexLayout Margin="0,-10,0,0">
                 <Frame BorderColor="Black">
                     <Frame BorderColor="Black" BackgroundColor="AliceBlue">
                         <StackLayout Margin="-20">
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                         </StackLayout>
                     </Frame>
@@ -162,19 +97,19 @@
                     <Frame BorderColor="Black" BackgroundColor="AliceBlue">
                         <StackLayout Margin="-20">
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                         </StackLayout>
                     </Frame>
@@ -183,28 +118,101 @@
                     <Frame BorderColor="Black" BackgroundColor="AliceBlue">
                         <StackLayout Margin="-20">
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                             <FlexLayout>
-                                <Entry/>
-                                <Entry/>
-                                <Entry/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+            </FlexLayout>
+            <FlexLayout Margin="0,-10,0,0">
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Frame BorderColor="Black" BackgroundColor="AliceBlue">
+                        <StackLayout Margin="-20">
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                            </FlexLayout>
+                            <FlexLayout>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
+                                <Entry MaxLength="1"/>
                             </FlexLayout>
                         </StackLayout>
                     </Frame>
                 </Frame>
             </FlexLayout>
         </StackLayout>
-        <FlexLayout Margin="20,0,20,0" >
+        <FlexLayout Margin="20,0,20,0">
+            <Label Text="is Generation Mode On :"/>
+            <Switch Margin="25,0,0,0" x:Name="Mode" WidthRequest="100" HorizontalOptions="End" Toggled="Mode_Toggled" IsToggled="True"/>
+        </FlexLayout>
+        <FlexLayout x:Name="GenratingSettings" Margin="20,0,20,0" HeightRequest="45">
             <Label WidthRequest="125" x:Name="Difficulty"  Text="Easy"/>
             <Slider WidthRequest="300" x:Name="SliderDiff"  Maximum="69" InputTransparent="False" MinimumTrackColor="Black" Opacity="100" Minimum="1" ValueChanged="Slider_ValueChanged"/>
+        </FlexLayout>
+        <FlexLayout x:Name="MessageArea" Margin="20,0,20,0" HeightRequest="45">
+            <Label Text="Status : "  HorizontalTextAlignment="Center" />
+            <Label x:Name="messageLabel" Margin="25,0,0,0" TextColor="CadetBlue" Text="Good To Go"  HorizontalTextAlignment="Center" />
         </FlexLayout>
         <Button x:Name="GenerateSoduko" Clicked="GenerateSoduko_Clicked" Margin="5" Text="Generate"/>
         <Button x:Name="Quit" Margin="5,-10,5,-10" Clicked="Quit_Clicked" Text="Quit"/>

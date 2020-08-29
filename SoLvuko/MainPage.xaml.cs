@@ -16,6 +16,8 @@ namespace SoLvuko
         SodukuApi board;
         int count = 23;
         bool isGenerated = false;
+        bool isCorrected = false;
+        bool isCorrectionMode = false;
 
         public MainPage()
         {
@@ -45,50 +47,108 @@ namespace SoLvuko
 
         }
 
-        private void ChangeState(bool isGen)
+        private void GChangeState(bool isGen)
         {
             this.isGenerated = isGen;
+            var genButton = (Button)this.FindByName("GenerateSoduko");
             if (isGenerated)
             {
-                var genButton = (Button)this.FindByName("GenerateSoduko");
                 genButton.Text = "Solve";
             }
             else
             {
-                var genButton = (Button)this.FindByName("GenerateSoduko");
                 genButton.Text = "Generate";
+            }
+            ShowSoduko();
+        }
+        private void CChangeState(bool isCorr)
+        {
+            this.isCorrected = isCorr;
+            var genButton = (Button)this.FindByName("GenerateSoduko");
+            var messageLabel = (Label)this.FindByName("messageLabel");
+            if (isCorrected)
+            {
+                messageLabel.Text = "Please Enter some Numbers";
+                messageLabel.TextColor = Color.Red;
+                genButton.Text = "Solve";
+
+            }
+            else
+            {
+                genButton.Text = "Clear"; 
             }
             ShowSoduko();
         }
 
         private void GenerateSoduko_Clicked(object sender, EventArgs e)
         {
-            if (!isGenerated)
+            if (!isCorrectionMode)
             {
-                ClearBord();
-                Random rnd = new Random();
-                List<int> ommit = new List<int>();
-                int countDown = count;
-                while (countDown > 0)
+                if (!isGenerated)
                 {
-                    ommit.Add(rnd.Next(1, 81));
-                    countDown--;
-                }
-                board.solve();
-                int offset = 1;
-                for (int i = 0; i < 9; i++, offset++)
-                {
-                    for (int j = 0; j < 9; j++, offset++)
+                    ClearBord();
+                    Random rnd = new Random();
+                    List<int> ommit = new List<int>();
+                    int countDown = count;
+                    while (countDown > 0)
                     {
-                        if (ommit.Contains(offset)) board.sodukoBoard[i][j].Value = 0;
+                        int value = rnd.Next(1, 81);
+                        if (!ommit.Contains(value))
+                        {
+                            ommit.Add(value);
+                            countDown--;
+                        }
                     }
+                    board.solve();
+                    int offset = 1;
+                    for (int i = 0; i < 9; i++, offset++)
+                    {
+                        for (int j = 0; j < 9; j++, offset++)
+                        {
+                            if (ommit.Contains(offset)) board.sodukoBoard[i][j].Value = 0;
+                        }
+                    }
+                    GChangeState(true);
                 }
-                ChangeState(true);
+                else
+                {
+                    board.solve();
+                    GChangeState(false);
+                }
             }
             else
             {
-                board.solve();
-                ChangeState(false);
+                if (isCorrected)
+                {
+                    int count = 0;
+                    for (int i = 0; i < board.sodukoBoard.Count; i++)
+                    {
+                        for (int j = 0; j < board.sodukoBoard.Count; j++)
+                        {
+                            var EntryText = GetEntry(i, j).Text == "" ? "0" : GetEntry(i, j).Text;
+                            board.sodukoBoard[i][j].Value = Convert.ToInt32(EntryText);
+                            if (EntryText=="0") count++;
+                        }
+                    }
+                    var messageLabel = (Label)this.FindByName("messageLabel");
+                    if (count != 81)
+                    {
+                        board.solve();
+                        messageLabel.Text = "Solved";
+                        messageLabel.TextColor = Color.ForestGreen;
+                        CChangeState(false);
+                    }
+                    else
+                    {
+                        messageLabel.TextColor = Color.Red;
+                        messageLabel.Text = "Please Enter some Numbers";
+                    }
+                }
+                else
+                {
+                    ClearBord();
+                    CChangeState(true);
+                }
             }
         }
 
@@ -132,6 +192,31 @@ namespace SoLvuko
             else
             {
                 diffSignal.Text = "Hard";
+            }
+        }
+
+        private void Mode_Toggled(object sender, ToggledEventArgs e)
+        {
+            
+            var Settingholder = (FlexLayout)this.FindByName("GenratingSettings");
+            var Messageholder = (FlexLayout)this.FindByName("MessageArea");
+            {
+                if (((Switch)sender).IsToggled)
+                {
+                    isCorrectionMode = false;
+                    Settingholder.IsVisible = true;
+                    Messageholder.IsVisible = false;
+                    if (board!=null)
+                        GChangeState(false);
+                }
+                else
+                {
+                    isCorrectionMode = true;
+                    Settingholder.IsVisible = false;
+                    Messageholder.IsVisible = true;
+                    if (board!=null)
+                        CChangeState(false);
+                }
             }
         }
     }
