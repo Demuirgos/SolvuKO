@@ -10,11 +10,17 @@ namespace SoLvuko
         { get; set; }
         public bool isEmpty
         { get => Value == 0; }
-        public IList<int> Possibilities
-        { get => possibilities; }
-        private static Random rng = new Random();
-        public static void Shuffle(IList<int> list)
+        
+        public SodukuCell(int val)
         {
+            Value = val; 
+        }
+    }
+    class SodukuApi
+    {
+	public static void Shuffle(IList<int> list)
+        {
+	    Random rng = new Random();	
             int n = list.Count;
             while (n > 1)
             {
@@ -25,15 +31,6 @@ namespace SoLvuko
                 list[n] = value;
             }
         }
-        List<int> possibilities = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        public SodukuCell(int val)
-        {
-            Value = val; possibilities.Remove(val);
-            Shuffle(this.possibilities);
-        }
-    }
-    class SodukuApi
-    {
         public List<List<SodukuCell>> sodukoBoard
         { get; }
         int size;
@@ -72,13 +69,15 @@ namespace SoLvuko
         }
         public bool solve()
         {
+	    List<int> possibilities = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
                     if (sodukoBoard[i][j].isEmpty)
                     {
-                        foreach (int value in sodukoBoard[i][j].Possibilities)
+                        Shuffle(possibilities);
+			foreach (int value in possibilities)
                         {
                             if (isCorrect(i, j, value))
                             {
